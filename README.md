@@ -65,7 +65,7 @@ This web application allows the concerned users and admins to communicate regard
   <img src="screenshots/fulltick.png" alt="hi" class="inline"/>
 </p>
 
-## ADMIN TICKET VIEW
+## harassment TICKET VIEW
 
 <p align="center">
   <img src="screenshots/listadmin.png" alt="hi" class="inline"/>

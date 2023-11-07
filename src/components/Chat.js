@@ -5,33 +5,11 @@ import "./grid.css";
 import SidePanel from "./Chat/SidePanel/SidePanel";
 import Messages from "./Chat/Messages/Messages";
 
-const Chat = ({
-  currentUser,
-  currentChannel,
-  isPrivateChannel,
-  userPosts,
-  primaryColor,
-  secondaryColor,
-}) => (
+const Chat = ({}) => (
   <Container fluid id="zero-pad">
-    <div className="roww app" style={{ background: secondaryColor }}>
-      <div className="coll-3" style={{ background: "#4c3c4c" }}>
-        <SidePanel
-          key={currentUser && currentUser.uid}
-          currentUser={currentUser}
-          primaryColor={primaryColor}
-        />
-      </div>
-
-      <div className="coll-9">
-        <Messages
-          key={currentChannel && currentChannel.id}
-          currentChannel={currentChannel}
-          currentUser={currentUser}
-          isPrivateChannel={isPrivateChannel}
-        />
-      </div>
-    </div>
+    <h1>HELP SECTION</h1>
+    <br></br>
+    <hr></hr>
   </Container>
 );
 

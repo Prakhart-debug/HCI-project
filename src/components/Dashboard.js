@@ -63,7 +63,7 @@ class Dashboard extends React.Component {
     message: "",
     errors: [],
     chart1: {
-      labels: ["Maintenance", "Electrical and Plumbing", "Other grievances"],
+      labels: ["WhistleBlowing", "harassment", "Other grievances"],
       datasets: [
         {
           data: [],
@@ -202,11 +202,11 @@ class Dashboard extends React.Component {
         user.email === snap.val().createdBy.email
       ) {
         loadedTickets.push(snap.val());
-        if ("maintenance" === snap.val().category) {
+        if ("WhistleBlowing" === snap.val().category) {
           loadedCat1Tickets.push(snap.val());
           c1++;
         }
-        if ("electrical_plumbing" === snap.val().category) {
+        if ("harassment" === snap.val().category) {
           loadedCat2Tickets.push(snap.val());
           c2++;
         }

@@ -36,8 +36,8 @@ import CommentList from "./CommentList";
 import "./App.css";
 
 const options = [
-  { key: 1, text: "Maintenance", value: "maintenance" },
-  { key: 2, text: "Electrical and Plumbing", value: "electrical_plumbing" },
+  { key: 1, text: "WhistleBlowing", value: "WhistleBlowing" },
+  { key: 2, text: "harassment", value: "harassment" },
   { key: 3, text: "Other grievances", value: "other" },
 ];
 

@@ -37,10 +37,16 @@ class Register extends React.Component {
       this.setState({ errors: errors.concat(error) });
       return false;
     } else if (!this.isPasswordValid(this.state)) {
-      error = { message: "Password is invalid" };
+      error = { message: "Password is invalid \n Password should be atleast 6 letters" };
       this.setState({ errors: errors.concat(error) });
       return false;
-    } else {
+    } 
+    else if(!this.isPasswordMatch(this.state)){
+      error = { message: "Password not matching, Please type again" };
+      this.setState({ errors: errors.concat(error) });
+      return false;
+    }
+    else {
       return true;
     }
   };
@@ -58,13 +64,18 @@ class Register extends React.Component {
   isPasswordValid = ({ password, passwordConfirmation }) => {
     if (password.length < 6 || passwordConfirmation.length < 6) {
       return false;
-    } else if (password !== passwordConfirmation) {
+    }
+    else {
+      return true;
+    }
+  };
+  isPasswordMatch = ({ password, passwordConfirmation }) => {
+    if (password !== passwordConfirmation) {
       return false;
     } else {
       return true;
     }
   };
-
   displayErrors = (errors) =>
     errors.map((error, i) => <p key={i}>{error.message}</p>);
 
