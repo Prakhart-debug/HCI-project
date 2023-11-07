@@ -9,6 +9,31 @@ import { Pie, Doughnut } from "react-chartjs-2";
 import "./App.css";
 
 class Dashboard extends React.Component {
+  // constructor(props){
+  //   super(props);
+  //   this.state = {
+  //     stepsEnabled: true,
+  //     initialStep: 0,
+  //     steps: [
+  //       {
+  //         element: '.hello',
+  //         intro: 'Hello step',
+  //       },
+  //       {
+  //         element: '.world',
+  //         intro: 'World step',
+  //       },
+  //     ],
+  //     hintsEnabled: true,
+  //     hints: [
+  //       {
+  //         element: '.hello',
+  //         hint: 'Hello hint',
+  //         hintPosition: 'middle-right',
+  //       }
+  //     ]
+  //   };
+  // }
   state = {
     user: this.props.currentUser,
     userType: "",

@@ -78,14 +78,14 @@ class Main extends React.Component {
             >
               Complaints
             </a>
-            <a
+            {/* <a
               id={active === "chat" ? "selected" : ""}
               className="list-group-item list-group-item-action "
               style={{ background: "#253544", cursor: "pointer" }}
               onClick={() => this.setState({ active: "chat", search: "" })}
             >
               Chat
-            </a>
+            </a> */}
             <a
               className="list-group-item list-group-item-action"
               style={{ background: "#253544", cursor: "pointer" }}
