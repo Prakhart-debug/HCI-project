@@ -84,7 +84,7 @@ class Main extends React.Component {
               style={{ background: "#253544", cursor: "pointer" }}
               onClick={() => this.setState({ active: "chat", search: "" })}
             >
-              Chat
+              Help
             </a>
             <a
               className="list-group-item list-group-item-action"
